@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: retro-boldy;
+  src: url(../fonts/RetroBoldyRegular.ttf);
+}
+@font-face {
+  font-family: raisa;
+  src: url(../fonts/raisa-script.ttf);
+}
+.logo {
+  font-family: raisa;
+}
+.about-me-name {
+  font-family: retro-boldy;
+}
+
+/* Social Links*/
+@media (max-width: 770px) {
+  .social-links-title {
+    display: none;
+  }
+}
+
+/* Navigation Reveal on Scroll */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+  filter: none;
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+/* bouncing letters animation */
+.bounce {
+  animation-name: bounce;
+}
+
+.bouncing-letters span {
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1.75, 0.65);
+  }
+  45% {
+    transform: scale(1.75, 0.65);
+  }
+  70% {
+    transform: scale(1.25, 0.75);
+  }
+  90% {
+    transform: scale(1.15, 0.85);
+  }
+}
