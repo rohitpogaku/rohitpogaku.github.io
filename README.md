@@ -1,2 +1,2 @@
-# Thi is my portfolio website
+# This is my portfolio website
 ### Used tailwind to style the website
