@@ -1,10 +1,9 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    extend: {
-      fontFamily: {
-      }
-    },
+    // screens: {
+    //   'mobile': '450px',
+    // },
   },
   plugins: [],
 }

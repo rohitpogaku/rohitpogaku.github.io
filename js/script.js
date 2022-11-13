@@ -2,9 +2,11 @@ const hamburger = document.getElementById('hamburger')
 const closeButton = document.getElementById('mobile-menu-close')
 const mobileMenu = document.getElementById('mobile-menu')
 const mainBody = document.getElementById('main-body')
+const link = document.querySelectorAll('.mobile-menu-link')
 
 hamburger.addEventListener('click', removeHidden)
 closeButton.addEventListener('click', addHidden)
+link.forEach((element) => { element.addEventListener("click", addHidden)})
 
 function removeHidden(){
   mobileMenu.classList.remove('hidden')
@@ -56,3 +58,4 @@ function bounce(letter) {
       );
   }
 }
+
