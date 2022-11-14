@@ -678,8 +678,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20rem;
 }
 
-.w-\[7\.5rem\] {
-  width: 7.5rem;
+.w-36 {
+  width: 9rem;
 }
 
 .w-32 {
@@ -692,10 +692,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-36 {
-  width: 9rem;
 }
 
 .w-0 {
@@ -1567,6 +1563,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (max-width: 770px) {
   .social-links-title {
     display: none;
+  }
+}
+
+/* gs yay logo */
+
+@media (max-width: 400px) {
+  .gs-yay-image > img {
+    width: 120px;
   }
 }
 

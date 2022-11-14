@@ -24,6 +24,13 @@
   }
 }
 
+/* gs yay logo */
+@media (max-width: 400px) {
+  .gs-yay-image > img {
+    width: 120px;
+  }
+}
+
 /* Navigation Reveal on Scroll */
 header {
   position: fixed;
