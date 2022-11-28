@@ -10,12 +10,12 @@ link.forEach((element) => { element.addEventListener("click", addHidden)})
 
 function removeHidden(){
   mobileMenu.classList.remove('hidden')
-  mainBody.classList.add('blur')
+  mainBody.classList.add('blur-sm')
 }
 
 function addHidden(){
   mobileMenu.classList.add('hidden')
-  mainBody.classList.remove('blur')
+  mainBody.classList.remove('blur-sm')
 }
 
 
